@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 200px;
+    
+
+    .card-picture{
+        width: 100px;
+        height: 100px;
+    }
+}

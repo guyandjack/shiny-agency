@@ -18,7 +18,8 @@ function Survey(){
           <nav>
 
             
-            {(numberQuestion > 1 && numberQuestion < 10)?
+            {
+                (numberQuestion > 1 && numberQuestion < 10)?
 
                 <div> 
                     <Link to={`/survey/${uriPagePre}`}>Précédent</Link>
@@ -38,9 +39,7 @@ function Survey(){
           </nav>
         </div>
       );
-    
 
-    
     
 }
 

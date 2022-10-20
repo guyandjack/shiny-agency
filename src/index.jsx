@@ -1,44 +1,19 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
 
-//import des pages
-import {Home} from "./pages/home/home-index.jsx";
-import {Survey} from "./pages/survey.jsx";
-import {Freelences} from "./pages/freelance/freelences-index";
-import {Result} from "./pages/result/result-index.jsx";
+//import de l' application
+import {App} from "./component/App/App.js"
 
-//import des composants
-import {Header} from "./component/header/index.jsx";
-import {Error} from "./component/error/error.jsx";
-
-
-import './index.css';
-
+// import test performance de l'appli
 import reportWebVitals from './reportWebVitals';
 
 
-
+// code principal
 const root = ReactDOM.createRoot(document.getElementById('root'));
+  
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-      
-      
-        <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-
-          <Route  path="/survey/:nbrquestion" element={<Survey />}></Route>
-
-          <Route  path="/freelences" element={<Freelences />}></Route>
-
-          <Route  path="/result" element={<Result />}></Route>
-
-          <Route path="/*" element={<Error />}></Route>
-        </Routes>
-      
-    </Router>
+    <App />
   </React.StrictMode>
 );
 

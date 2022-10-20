@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import "../../style/CSS/header.css"
 
 function Header(){
     return(
@@ -7,8 +8,7 @@ function Header(){
             <Link to="/">Accueil</Link>
             <Link to="/survey/1">Questionnaire</Link>
             <Link to="/freelences">Freelences</Link>
-            
-            
+       
         </nav>
     )
 }
