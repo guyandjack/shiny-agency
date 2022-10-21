@@ -4,8 +4,13 @@ import React from "react";
 //import de l' application
 import {App} from "./component/App/App.js"
 
+//import fichier de style
+import "./style/CSS/normalize.css"
+import "./index.css"
+
 // import test performance de l'appli
 import reportWebVitals from './reportWebVitals';
+
 
 
 // code principal
@@ -13,7 +18,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   
 root.render(
   <React.StrictMode>
+
     <App />
+    
   </React.StrictMode>
 );
 

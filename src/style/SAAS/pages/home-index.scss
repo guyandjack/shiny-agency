@@ -1,3 +1,49 @@
-.home-index-div{
-    color: red;
+// import charte de couleur
+@import "../utils/map-color";
+
+//import component style
+@import "../component/button-test";
+
+
+
+.home-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height:fit-content;
+    padding: 50px;
+    background-color: map-get($colors-component, bg-color-light );
+    //border: 2px solid blue;
+
+    &__text{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: 40%;
+
+        .home-text{
+            font-size: 40px;
+            color:map-get($colors-component, bg-color-dark )
+        }
+
+        .home-link{
+                display:block;
+                width: 250px;
+                
+        }
+    }
+
+    &__img{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        width: 40%;
+    }
 }

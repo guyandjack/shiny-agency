@@ -1,0 +1,6 @@
+.error-container {
+  background-color: blue;
+}
+.error-container:hover {
+  background-color: lightblue;
+}

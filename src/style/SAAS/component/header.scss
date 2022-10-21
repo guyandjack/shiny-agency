@@ -1,0 +1,58 @@
+//import de la charte de couleur
+ @import "../utils/map-color";
+
+//import style component
+@import "../component/button-test.scss";
+
+.header{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: map-get($colors-component, bg-color-std );
+    //border: 2px solid red;
+
+    &__container__img{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 20%;
+        //border: 2px solid red;
+   
+    }
+
+    &__container__link{
+
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+        width:30%;
+
+        .header-li{
+          
+            
+            &__link{
+
+                display:block;
+                width:fit-content;
+                padding: 10px;
+                color: map-get($colors-component, secondary-color );
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+    }
+}

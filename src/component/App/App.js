@@ -8,7 +8,7 @@ import { Freelences } from "../../pages/freelance/freelences-index";
 import { Result } from "../../pages/result/result-index.jsx";
 
 //import des composants
-import { Header } from "../header/index.jsx";
+import { Header } from "../header/header.jsx";
 import { Error } from "../error/error.jsx";
 
 //import fichier de style
@@ -19,6 +19,7 @@ import "../../style/CSS/normalize.css"
 
 
 function App(){
+  return(
     <Router>
 
       <Header />
@@ -36,6 +37,6 @@ function App(){
       </Routes>
 
     </Router>
-  
+  )
 }
 export  {App};

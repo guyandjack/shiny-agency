@@ -1,0 +1,29 @@
+// style du composant "button-test"
+
+//import de la charte de couleur
+@import "../utils/map-color";
+
+.button-test{
+
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+
+    &__link{
+
+        width: 100%;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: map-get($colors-component, bg-color-dark);
+        color: map-get($colors-component, bg-color-std );
+        font-size: 18px;
+
+    }
+    
+    
+}
