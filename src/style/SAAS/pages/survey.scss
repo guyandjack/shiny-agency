@@ -1,0 +1,100 @@
+//style pour la page survey
+
+//import couleur de themes
+@import "../utils/map-color";
+
+.test{
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    text-align: center;
+    color: map-get($colors-component, text-question );
+
+    &__text-title{
+
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+        border-bottom:  2px solid map-get($colors-component, primary-color);
+        margin-bottom: 50px;
+        
+    }
+    
+    &__text-question{
+        
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 50px;
+       
+    }
+
+    &__form{
+
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 100%;
+        margin-bottom: 50px;
+
+        &__label{
+
+            display:block;
+            width: 25%;
+            padding:20px;
+            font-size: 25px;
+
+            background: map-get($colors-component, bg-color-light );
+            border: 4px solid transparent ;
+            border-radius: 31px;  
+            
+            
+            &:hover{
+                
+                border: 4px solid map-get($colors-component, label-hover) ;
+                
+            }
+            
+        }
+        
+        &__input{
+            
+            display: none;
+             
+            &:checked +.test__form__label{   
+                
+                border: 4px solid map-get($colors-component, primary-color) ;
+                
+
+            }
+        }
+
+    }
+
+    &__nav{
+
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content: center;
+        align-items: center;
+
+
+        &__link{
+           margin-right:  50px;
+           margin-left:  50px;
+           color:map-get($colors-component, text-question );
+           text-decoration: underline;
+        }
+
+    }
+}
+
+

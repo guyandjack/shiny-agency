@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //import des pages
 import { Home } from "../../pages/home/home-index.jsx";
-import { Survey } from "../../pages/survey.jsx";
+import { Survey } from "../../pages/test/survey.jsx";
 import { Freelences } from "../../pages/freelance/freelences-index";
 import { Result } from "../../pages/result/result-index.jsx";
 
